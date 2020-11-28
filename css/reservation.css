@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(219, 162, 6);
+}
+/* background-color: rgb(219, 162, 6); */
+.name{
+    font-size: 30px;
+    color: brown;
+    text-shadow: 3px 3px 3px white;
+    font-family: cursive;
+}
+
+ul{
+    list-style:  none;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-style: oblique;
+    position: relative;
+    display: block;
+}
+a::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform .4s linear;
+    transform-origin: right;
+}
+ul li a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.toggle{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+a span{
+    background-color: white;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
+@media (max-width:700px){
+    .toggle{
+        display: flex;
+    }
+    ul{
+        display: none;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    ul li{
+        text-align: center;
+    }
+    ul li a{
+        padding: 10px;
+        margin: 10px;
+    }
+    ul.active{
+        display: flex;
+    }
+    ul li a:hover::before{
+        display: none;
+    }
+    ul li a:hover{
+        color: white;
+        font-size: 23px;
+    }
+}
+.img1{
+    background-image: url('../images/jason-leung-poI7DelFiVA-unsplash.jpg');
+    height: 600px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.caption{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+}
+.caption > span{
+    color: white;
+    font-size: 50px;
+}
+.para1{
+    text-align: center;
+    height: 400px;
+}
+.img2{
+    background-image: url('../images/volkan-vardar-1H30uRC1plc-unsplash.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption2{
+    text-align: center;
+    position: absolute;
+    margin-top: 10%;
+    left: 0;
+    width: 100%;
+}
+.caption2 > span{
+    color: white;
+    font-size: 50px;
+}
+
+.para2{
+    text-align: center;
+    height: 500px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.para2 > h1{
+    letter-spacing: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    margin: 10px auto;
+}
+.straight{
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+.no{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 500px;
+    margin: 10px auto;
+}
+.row > input{
+    width: 250px;
+    height: 23px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.straight > input{
+    margin-bottom: 5px;
+    width: 600px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.date,.time{
+    width: 250px;
+    margin-bottom: 5px;
+}
+
+.submit{
+    width: 200px;
+    height: 30px;
+    font-size: 17px;
+    border: 1px solid black;
+    border-bottom: 2px solid rgb(49, 48, 48);
+    text-shadow: 2px 1px 5px rgb(70, 69, 69);
+    border-radius: 5px;    
+}
+.submit:hover{
+    font-size: 17px;
+    background-color:  black;
+    color: white;
+}
+footer{
+    text-align: center;
+    font-family: cursive;
+    position: fixed;
+    bottom: 0px;
+    left: 650px;
+}

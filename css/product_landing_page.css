@@ -1,0 +1,156 @@
+body{
+	width: 90%;
+	margin: 0 auto;
+}
+
+ul{
+	width: 1000px;
+	height: 80px;
+	margin: 0px auto 0px auto;
+	padding: 2px;
+}
+.wrapper {
+ width: 1250px;
+ margin: 20px auto 20px auto;
+ border: 1px solid #000000;
+ background-color: #ffffff;} 
+header{
+	background-color: rgb(72,72,72);
+}
+.logo{
+	width: 90px;
+	height: 90px;
+	text-align: left;
+	vertical-align: middle;
+
+}
+.name{
+	color: white;
+	text-shadow: 8px 3px 4px black;
+	margin-right: 200px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+}
+li{
+	display: inline;
+	margin: 0px 10px;
+
+}
+li.a{
+	color: white;
+	font-family: Courier, Courier New, monospace;
+
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.column-1, .column-2{
+	width: 67%;
+	margin: 1%;
+	float: left;
+	height: 560px;
+}
+.column-2{
+	width: 29%;
+}
+.pics{
+	margin: 2px;
+	margin-top: 20px;
+	width: 800px;
+	height: 480px;
+}
+.thinner,.smaller,.lighter{
+	text-align: center;
+	font-size: 25px;
+	margin: 60px;
+	color: rgb(185,0,92);
+	font-family: Arial,Verdana,Helvetica,sans-serif;
+	font-weight: bold;
+}
+.order {
+color: white;
+width: 300px;
+font-family: Arial,Verdana,Helvetica,sans-serif;
+font-size: 18px;
+text-shadow: 0px 1px 2px black;
+border-bottom: 2px solid #4b5050;
+background-color: #209da1;
+border-radius: 15px;
+padding: 20px;
+}
+.order:hover {
+color: white;
+border: 1px solid #a4a4a4;
+border-top: 2px solid #b2b2b2;
+background-color: #4b5050;
+}
+.order:active {
+color: white;
+background-color: #209da1;
+border: 2px solid #19f59d;
+}
+.i{
+	margin: 10px;
+	text-align: center;
+}
+.product{
+	margin-top: 100px;
+	border-bottom: 3px solid black;
+	text-align: center;
+}
+table{
+	width: 100%;
+	empty-cells:hide;
+	border-collapse: collapse;
+}
+.ipics{
+	height: 150px;
+}
+th,td{
+	padding:  7px 10px 10px 10px;
+}
+th{
+	text-transform: uppercase;
+	font-size: 80%;
+	text-align: left;
+	letter-spacing: 0.1em;
+	border-bottom: 2px solid red;
+}
+.even{
+	background-color: #efefef;
+}
+.row:hover {
+background-color: #cecece;
+}
+.video_1,.video_2,.video_3{
+	width: 31%;
+	margin: 1%;
+	float: left;
+	text-align: center;
+}
+.iframe_1,.iframe_2,.iframe_3{
+	padding: 50px;
+}
+
+.video{
+	background-color: #efefef;;
+	height: 500px;
+	margin-bottom: 10px;
+}
+.p{
+	margin-bottom: 30px;
+}
+
+footer{
+	background-color: #171717;
+	height: 200px;
+	text-align: center;
+}
+li.footer{
+	color: white;
+	margin: 15px;
+	display: block;
+}
+
+
+

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin: auto;
+}
+.name-icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    margin-left: 20px;
+}
+.logo-name{
+    font-size: 30px;
+    font-weight: bold; 
+    background: linear-gradient(to right, white, rgb(190, 118, 105) );
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+      
+}
+.icon i{
+    color: white; 
+}
+.pages ul{
+    list-style: none;
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;    
+}
+.pages ul li a{
+    text-decoration:none;
+    color: white;
+    font-size: 15px;
+    margin: 20px;
+}
+.showcase{
+    background-color: rgb(190, 118, 105);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+.showcase .form{
+    background-color: white;
+    width: 300px;
+    position: relative;
+    top: 150px;
+    border-radius: 20px;
+    border: 1px solid rgb(190, 118, 105);
+    height: 300px;
+    box-shadow: 0px 2px 10px black;
+    text-align: center;
+    z-index: 100;
+    animation: top 1s ease-in;
+
+}
+.showcase img{
+    animation: slide 1s ease-in;
+
+}
+@keyframes slide{
+    0% {
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes top{
+    0% {
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/* rgb(26, 19, 18) */
+.signup {
+    text-align: center;
+}
+.input > input{
+    border:0px;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+    padding: 2px;
+    margin: 10px 0;
+    width: 100%;
+    text-transform: capitalize;
+    cursor: pointer;
+    caret-color: rgb(190, 118, 105);
+}
+.input > input:focus{
+    outline: none;
+}
+.form .submit{
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.form .submit:hover{
+    transform: scale(1.1);
+}
+.showcase::before,
+.showcase::after{
+    content: '';
+    position: absolute;
+    bottom: 100px;
+    height: 100px;
+    background-color: white;
+    right: 0;
+    left: 0;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+.style{
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.fas,.fab{
+    padding: 10px;
+    color: rgb(190, 118, 105);
+}
+.eat, .exercise,.live{
+    width: 300px;
+    border: 1px solid rgb(190, 118, 105);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px black;
+    transition: transform 0.2s ease-in;
+}
+.eat:hover, .exercise:hover,.live:hover{
+    transform: translateY(-15px);
+}
+.style  h2{
+    text-transform: uppercase;
+    line-height: 1.6em;
+}
+
+footer{
+    background-color: black;
+    height: 100px;
+    text-align: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .fab{
+    color: white;
+}
+footer div{
+    color: white;
+    text-transform: capitalize;
+    display: block;
+}
+@media (max-width:768px){
+    .showcase{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        align-content: center;
+        justify-items: center;
+    }
+    .showcase::before,
+    .showcase::after{
+        display: none;
+    }
+    .showcase img{
+        width: 100%;
+    }
+    .showcase .form{
+        position: relative;
+        top: 10px;
+        justify-self: center;    
+    }
+    .style{
+        flex-direction: column;
+        justify-items: center;
+        align-content: space-between;
+        height: 800px;
+    }
+    .eat:hover, .exercise:hover,.live:hover{
+        transform: none;
+    }
+
+}
+@media (max-width:500px){
+    header{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .pages a:hover{
+        border-bottom: 1px solid white;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,89 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin-bottom: 0;
+	background : url("../images/jay\ \(1\).jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.name{
+	margin-top: 0;
+	color: brown;
+	text-shadow: 3px 3px 3px white;
+	font-size: 70px;
+	text-align: center;
+	font-family: cursive;
+	margin-bottom: 2px;
+	position: relative;
+	animation: heading;
+	animation-duration: 3s;
+	animation-fill-mode: forwards; 
+}
+@keyframes heading{
+	0% {top: -200px; opacity: 0;}
+	100% {top: 10px; opacity: 1;}
+}
+nav{
+	margin: 200px auto 200px auto;
+}
+ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	animation: as;
+	animation-duration: 4s;
+}
+@keyframes as{
+	0% {left: -2000px;}
+	100% {left: 0;}
+}
+a{
+	position: relative;
+	text-decoration: none;
+	color: rgb(85, 2, 30);
+	margin: 10px;
+	padding: 5px;
+	font-size: 25px;
+}
+a::before{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 100%;
+	background-color: white;
+	bottom: 0;
+	left: 0;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform .4s linear;
+
+}
+a:hover::before{
+	transform: scaleX(1);
+	transform-origin: left;
+}
+a:hover{
+	color: black;
+}
+@media( max-width: 700px ){
+	.name{
+		font-size: 30px;
+	}
+	a{
+		font-size: 15px;
+	}
+}
+
+footer{
+    text-align: center;
+    font-family: cursive;
+    position: fixed;
+    bottom: 0px;
+	left: 650px;
+}
+footer > span{
+	color: white;
+}

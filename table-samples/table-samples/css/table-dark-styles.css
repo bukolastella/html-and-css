@@ -1,0 +1,33 @@
+/* dark table styles */
+
+table.dark {
+	border-collapse:collapse;
+	border: 1px solid #1a1a1a;}
+
+table.dark th {
+	color:#d6d6d6;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:75%;
+	text-transform:uppercase;
+	letter-spacing:0.13em;
+	padding:7px;
+	background-color:#1c1c1c;
+	border-bottom:1px solid #000;
+	text-align:left;}
+
+table.dark td {
+	color:#8e8e8e;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:75%;
+	height:64px;
+	padding:7px;
+	background-color: #303030;
+	background-image: url("../images/gradient.gif");
+	background-repeat: repeat-x;
+	border-right:1px solid #1a1a1a;}
+
+table.dark h4 {
+	color:#efefef;
+	font-size:140%;
+	font-weight:normal;
+	margin:0px;}
