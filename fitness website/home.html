@@ -32,7 +32,11 @@
                 <img src="images/kike-vega-F2qh3yjz6Jk-unsplash.jpg" alt="a fitness picture">
             </div>
             <div class="form">
-                <form action="">
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                      </p>
                     <div class="signup"><h1>signup</h1></div>
                     <div class="input"><input type="text" name="name" placeholder="name" required></div>
                     <div class="input"><input type="email" name="email" placeholder="email" required></div>
