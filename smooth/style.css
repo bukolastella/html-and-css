@@ -205,13 +205,14 @@ input::placeholder {
 
 @media (max-width: 800px) {
   .main {
-    width: 400px;
+    width: 350px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 150px 10fr;
+    border-radius: 10px;
   }
   .left {
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
   }
   .left-main {
     margin-top: 20px;
