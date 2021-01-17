@@ -203,7 +203,7 @@ input::placeholder {
   text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .main {
     width: 400px;
     display: grid;
