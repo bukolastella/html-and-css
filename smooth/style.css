@@ -205,7 +205,7 @@ input::placeholder {
 
 @media (max-width: 800px) {
   .main {
-    width: 380px;
+    width: 350px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 150px 10fr;
