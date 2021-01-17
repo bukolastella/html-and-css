@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 :root {
   --color-primary: orange;
@@ -126,7 +127,7 @@ body {
 .name {
   font-weight: bold;
   font-size: 30px;
-  font-style: italic;
+  /* font-style: italic; */
   text-transform: capitalize;
   /* letter-spacing: 0.1rem; */
   word-spacing: 0.1rem;
