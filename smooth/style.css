@@ -30,8 +30,12 @@ body {
 }
 .left {
   width: 100%;
-  /* background-color: orange; */
-  background-color: var(--color-primary);
+  background: linear-gradient(
+    to top right,
+    rgba(255, 166, 0, 0.486),
+    rgb(255, 167, 4)
+  );
+  /* background-color: var(--color-primary); */
   padding: 20px;
   border-radius: 20px 0 0 20px;
 }
