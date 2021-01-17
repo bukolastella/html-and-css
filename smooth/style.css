@@ -217,7 +217,9 @@ input::placeholder {
   }
   .left {
     border-radius: 10px 10px 0 0;
+    background-color: var(--color-primary);
   }
+
   .left-main {
     margin-top: 20px;
   }
