@@ -199,19 +199,16 @@ input::placeholder {
   text-align: center;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 00px) {
   .main {
+    height: 50vh;
+    width: 200vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 150px 10fr;
-    height: 800vh;
-    width: 800vw;
   }
   .left {
     border-radius: 20px 20px 0 0;
-    /* border-radius: 20px 20px 2em 8em / 20px 20px 2em 1em; */
-    /* height: 80px; */
-    /* display: none; */
   }
   .name {
     margin-top: 20px;
@@ -222,7 +219,6 @@ input::placeholder {
   }
   .form {
     margin-top: 20px;
-    /* padding: 0; */
   }
   .wifi {
     width: 200px;
@@ -231,7 +227,6 @@ input::placeholder {
     margin-right: 0px;
   }
   input {
-    /* background: #ecf0f3; */
     width: 100%;
   }
-}
+} */
