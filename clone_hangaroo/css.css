@@ -283,10 +283,11 @@ section {
   font-weight: lighter;
   font-family: cursive;
 }
-
-/* #p {
-  letter-spacing: 3px;
-} */
+.buks {
+  /* color: white; */
+  text-transform: capitalize;
+  text-align: center;
+}
 @media (max-width: 1000px) {
   body {
     background-repeat: repeat-y;
@@ -327,16 +328,11 @@ section {
     left: 10px;
   }
   .overlay {
-    position: absolute;
-    width: 200%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(3px);
-    z-index: 5;
+    width: 158%;
   }
   .modal {
-    width: 90%;
-    margin-left: 50%;
+    width: 80%;
+    margin-left: 30%;
   }
   .image {
     width: 50%;

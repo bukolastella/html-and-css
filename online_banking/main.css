@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: url("images/aq.jpg");
+  background-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+
+.top {
+  width: 90%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ecf0f3;
+  margin: 30px auto;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  border-radius: 10px;
+}
+.logo-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+}
+.balance {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.greeting,
+.current,
+.time {
+  text-transform: capitalize;
+}
+.money {
+  font-size: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.greeting {
+  font-size: 25px;
+}
+.current,
+.time {
+  font-size: 20px;
+}
+.flex {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.flex1 {
+  width: 60%;
+  height: 500px;
+}
+.flex2 {
+  width: 35%;
+  height: 500px;
+  /* background-color: rgb(182, 182, 43); */
+}
+.card {
+  width: 310px;
+  height: 180px;
+  transform-style: preserve-3d;
+  transition: all 0.2s ease;
+  margin: auto;
+}
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(236, 157, 9);
+  border-radius: 10px;
+  backface-visibility: hidden;
+  padding: 15px;
+  box-shadow: 0 0 10px #777777;
+}
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  padding: 15px;
+  background-color: rgb(236, 157, 9);
+  box-shadow: 0 0 10px #777777;
+  transform: rotateY(180deg);
+}
+.amount {
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Source Serif Pro", serif;
+}
+.cardno {
+  text-align: center;
+  word-spacing: 30px;
+  font-family: "Crimson Text", serif;
+  letter-spacing: 0.1rem;
+}
+.validno {
+  margin-top: 30px;
+  width: 80px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 7px;
+}
+.no {
+  align-self: flex-end;
+}
+.valid {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.card-name {
+  text-transform: uppercase;
+  font-size: 13px;
+  word-spacing: 0.1rem;
+}
+.cardlast {
+  display: flex;
+  justify-content: space-between;
+}
+.visa {
+  position: relative;
+  text-align: right;
+  font-size: 40px;
+  align-self: center;
+  font-family: "Redressed", cursive;
+  letter-spacing: 00.1rem;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.backflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto;
+  gap: 1.5rem;
+}
+.g1 {
+  background-image: linear-gradient(to top left, #39b385, #a4f061);
+}
+.g {
+  border-radius: 5px;
+  max-width: 500px;
+  padding: 25px;
+  margin: auto;
+}
+
+.transfer {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+label {
+  display: block;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 5px;
+}
+.miniflex {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+  gap: 0.7rem;
+  grid-template-rows: auto;
+}
+
+.i {
+  height: 30px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  text-align: center;
+  font-size: 20px;
+}
+.submit {
+  width: 40px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  align-self: center;
+}
+.g2 {
+  background-image: linear-gradient(to top left, #547be7, #8c61f0);
+}
+.g3 {
+  background-image: linear-gradient(to top left, #718323, #e6f061);
+}
+.g4 {
+  background-image: linear-gradient(to top left, #ac1e31, #f07661);
+}
+.sort-period {
+  width: 200px;
+  height: 60px;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  background: #ecf0f3;
+  box-shadow: 0 0 10px #777777;
+  border-radius: 5px;
+  padding: 5px;
+}
+.sort-head {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+select {
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: auto;
+}
+.head {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.transition {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  border-radius: 5px;
+  height: 300px;
+}
+.deposit,
+.withdraw {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  /* background-image: linear-gradient(to top left, #547be7, #8c61f0); */
+}
+.withdraw {
+  /* background-image: linear-gradient(to top left, #ac1e31, #f07661); */
+}
+.symbol {
+  margin-right: 20px;
+  text-transform: capitalize;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  background-color: yellow;
+}
+.doings-money {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgba(124, 136, 157, 0.15);
+}
+.trans-money {
+}
+.trans-doings {
+  display: flex;
+  flex-direction: column;
+}
+.username {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.doings {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.trans-time {
+  text-transform: uppercase;
+  color: gray;
+}
+.w {
+  color: red;
+}
+.d {
+  color: green;
+}
+.summary {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.s-money {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.s {
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.in-money {
+  font-size: 20px;
+  letter-spacing: 0.05rem;
+}
+.log {
+  text-align: center;
+}

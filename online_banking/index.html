@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>online banking</title>
+  </head>
+  <body>
+    <section class="section">
+      <div class="logo-name">
+        <div class="logo"></div>
+        <div class="name">online banking</div>
+      </div>
+
+      <form action="" class="form" id="form" method="GET">
+        <label class="up" for="username">username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="username"
+        />
+        <label class="up" for="password">password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+        <button type="submit" id="login">login</button>
+      </form>
+    </section>
+    <!-- hfjfr -->
+    <div class="open-page">
+      <div class="top">
+        <div class="greeting">good afternoon, bukola.</div>
+        <div class="logo-name">
+          <div class="logo1"></div>
+          <div class="name">online banking</div>
+        </div>
+        <div class="balance">
+          <div class="current">current balance</div>
+          <div class="money">&#8358;2000.00</div>
+          <div class="time">as of 31/07/2001, 18:37</div>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="flex1">
+          <div class="card">
+            <div class="front">
+              <div class="amount">&#8358;2000.00</div>
+              <div class="cardno">4277 4566 8789 5093</div>
+              <div class="cardlast">
+                <div class="till">
+                  <div class="validno">
+                    <div class="valid">valid <br />till</div>
+                    <div class="no">12/24</div>
+                  </div>
+                  <div class="card-name">bukola abolarin</div>
+                </div>
+
+                <div class="visa">visa</div>
+              </div>
+            </div>
+
+            <div class="back">
+              <div class="backflex">
+                <div class="backvisa">visa</div>
+                <div class="backno">777</div>
+              </div>
+            </div>
+          </div>
+
+          <section class="grid">
+            <div class="g1 g">
+              <div class="transfer">transfer money</div>
+              <form class="miniflex">
+                <div class="transfer-to">
+                  <input type="text" class="i" />
+                  <label for="">transfer to</label>
+                </div>
+                <div class="transfer-to">
+                  <input type="number" class="i" />
+                  <label for="">Amount</label>
+                </div>
+                <button type="submit" class="submit">→</button>
+              </form>
+            </div>
+            <div class="g2 g">
+              <div class="transfer">request money</div>
+              <form class="miniflex">
+                <div class="transfer-to">
+                  <input type="text" class="i" id="requestTo" />
+                  <label for="">transfer to</label>
+                </div>
+                <div class="transfer-to">
+                  <input type="text" class="i" id="requestAmount" />
+                  <label for="">Amount</label>
+                </div>
+                <button type="submit" class="submit" id="requestBtn">→</button>
+              </form>
+            </div>
+            <!-- <div class="g3 g">
+              <div class="transfer">Airtime</div>
+              <form class="miniflex">
+                <div class="transfer-to">
+                  <input type="text" class="i" />
+                  <label for="">Mobile no</label>
+                </div>
+                <div class="transfer-to">
+                  <input type="text" class="i" />
+                  <label for="">Amount</label>
+                </div>
+                <button type="submit" class="submit">→</button>
+              </form>
+            </div> -->
+            <div class="g4 g">
+              <div class="transfer">close account</div>
+              <form class="miniflex">
+                <div class="transfer-to">
+                  <input type="text" class="i" id="confirmUser" />
+                  <label for="">confirm user</label>
+                </div>
+                <div class="transfer-to">
+                  <input type="password" class="i" id="confirmPin" />
+                  <label for="">confirm pin</label>
+                </div>
+                <button type="submit" class="submit" id="confirmBtn">→</button>
+              </form>
+            </div>
+          </section>
+        </div>
+        <div class="flex2">
+          <h1 class="head">Transactions</h1>
+          <div class="sort-period">
+            <h1 class="sort-head">sort</h1>
+            <select name="sorts" id="sorts">
+              <option value="all transition">all transition</option>
+              <option value="deposits only">deposits only</option>
+              <option value="withdraw only">withdraw only</option>
+            </select>
+          </div>
+
+          <div class="transition">
+            <div class="trans-time">66 decemer 4545</div>
+            <div class="deposit">
+              <div class="symbol">42</div>
+              <div class="doings-money">
+                <div class="trans-doings">
+                  <div class="username">buks</div>
+                  <div class="doings">send money</div>
+                </div>
+                <div class="trans-money d">&#8358;300.00</div>
+              </div>
+            </div>
+            <div class="withdraw">
+              <div class="symbol">42</div>
+              <div class="doings-money">
+                <div class="trans-doings">
+                  <div class="username">buks</div>
+                  <div class="doings">send money</div>
+                </div>
+                <div class="trans-money w">&#8358;300.00</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="summary">
+            <div class="s-money">
+              <div class="s">in</div>
+              <div class="in-money d">&#8358;400.00</div>
+            </div>
+            <div class="s-money">
+              <div class="s">out</div>
+              <div class="in-money w">&#8358;400.00</div>
+            </div>
+          </div>
+          <div class="log">
+            you will be logged out in <span id="span">4:45</span>
+          </div>
+          <button type="submit" id="logout">logout</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
