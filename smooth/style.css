@@ -146,6 +146,9 @@ body {
   margin-bottom: 8px;
   color: rgb(156, 21, 21);
 }
+.user {
+  display: flex;
+}
 input {
   /* background: #ecf0f3; */
   background-color: white;
@@ -163,6 +166,7 @@ input {
 }
 input::placeholder {
   color: gray;
+  /* text-transform: capitalize; */
 }
 .login {
   display: block;
@@ -199,10 +203,9 @@ input::placeholder {
   text-align: center;
 }
 
-/* @media (max-width: 00px) {
+@media (max-width: 500px) {
   .main {
-    height: 50vh;
-    width: 200vw;
+    width: 400px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 150px 10fr;
@@ -210,23 +213,24 @@ input::placeholder {
   .left {
     border-radius: 20px 20px 0 0;
   }
-  .name {
+  .left-main {
     margin-top: 20px;
-    display: none;
   }
+  .name,
   .text {
     display: none;
   }
   .form {
-    margin-top: 20px;
+    margin-top: 10px;
+    width: 100%;
   }
   .wifi {
-    width: 200px;
-  }
-  .fa-wifi {
-    margin-right: 0px;
+    width: 150px;
   }
   input {
     width: 100%;
+    border: none;
+    border-bottom: 1px solid orange;
+    border-radius: 0px;
   }
-} */
+}
