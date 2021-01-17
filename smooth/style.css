@@ -210,13 +210,13 @@ input::placeholder {
 
 @media (max-width: 800px) {
   .main {
-    width: 300px;
+    width: 350px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 150px 10fr;
     border-radius: 10px;
     /* box-shadow: 0 0; */
-    box-shadow: inset 0 0 10px #777777;
+    /* box-shadow: inset 0 0 10px #777777; */
   }
   .left {
     border-radius: 10px 10px 0 0;
@@ -242,5 +242,11 @@ input::placeholder {
     border: none;
     border-bottom: 1px solid orange;
     border-radius: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .main {
+    width: 300px;
+    /* box-shadow: inset 0 0 10px #777777; */
   }
 }
