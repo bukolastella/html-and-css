@@ -207,6 +207,13 @@ input::placeholder {
   width: 100%;
   text-align: center;
 }
+.click a {
+  text-decoration: none;
+}
+
+.click a:hover {
+  text-decoration: underline;
+}
 
 @media (max-width: 800px) {
   .main {
@@ -247,7 +254,7 @@ input::placeholder {
 @media (max-width: 500px) {
   .main {
     width: 300px;
-    box-shadow: none;
+    /* box-shadow: none; */
     /* box-shadow: inset 0 0 10px #777777; */
   }
 }
