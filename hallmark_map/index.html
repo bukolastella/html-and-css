@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script defer src="script.js"></script>
+    <title>HallMark-Map</title>
+  </head>
+  <body>
+    <main>
+      <section class="left">
+        <h1>Weather-description map</h1>
+        <div class="inner">
+          <!-- <div class="row-1">
+            <div class="flag">
+              <div class="e"></div>
+            </div>
+            <div class="content">
+              <div class="content-top">
+                <h3 class="country">portugal</h3>
+                <h4 class="names">Ilorin</h4>
+              </div>
+
+              <div class="content-down middle">
+                <div class="time">12hrs ago</div>
+                <div class="temp"><span>🌡</span> 310.81<sup>o</sup></div>
+                <div class="humidity"><span>❄</span>17%</div>
+                <div class="pressure"><span>🌀</span>1006 hPa</div>
+                <div class="description"><span>☁</span> clear sky</div>
+              </div>
+
+              <div class="content-down end">
+                <div><span>capital:</span> ologata</div>
+                <div><span>region:</span> dchsjka</div>
+                <div><span>population:</span> 782287</div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <section class="right" id="map"></section>
+    </main>
+  </body>
+</html>

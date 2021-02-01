@@ -4,46 +4,156 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Poppins&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <title>Hotel</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="slide">
-        <div>
+      <div class="slider">
+        <div class="slide">
+          <img src="images/manuel-moreno-DGa0LQ0yDPc-unsplash.jpg" />
+          
+          
+        </div>
+        <div class="slide">
+          <img src="images/roberto-nickson-EeeKjwm2vDo-unsplash.jpg" />
+        </div>
+        <div class="slide">
+          <img src="images/ej-k-eunirCQ_WXk-unsplash.jpg" />
+        </div>
+        <div class="slide">
           <img
             src="images/fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg"
           />
         </div>
-        <div>
-          <img src="images/guy-basabose-HunEK-zNOy0-unsplash.jpg" />
-        </div>
-        <div>
-          <img src="images/jess-torre-H7TGM7Sx0o4-unsplash.jpg" />
-        </div>
-        <div>
-          <img src="images/roberto-nickson-EeeKjwm2vDo-unsplash.jpg" />
-        </div>
-        <div>
+        <div class="slide">
           <img src="images/venice-hotel-oqXapAIctAg-unsplash.jpg" />
         </div>
         <button class="slider__btn slider__btn--left">&larr;</button>
         <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="topic">
+          <div class="title">Hot book suite</div>
+          <div class="sub-title">the art of essence</div>
+        </div>
+        <div class="dots"></div>
       </div>
     </div>
-    <!-- <header>
-            <div class="menu">menu</div class="menu">
-            <div class="middle">
-              <img
-                src="images/4-41515_eiffel-tower-clip-art-paris-eiffel-tower-clipart.png"
-                alt="eiffel tower" class="eiffel"
-              />
-              <h2 class="hotel">hotel</h2>
-            </div>
+    <header class="nav"> 
+      <!-- <i class="fas fa-bars"></i> -->
+      <!-- <span>menu</span> -->
+            <div class="menu"> <div class="toggle"><span></span> <span></span> </div>  </div class="menu">
             <div class="flex-end">
-              <div class="rooms"><a href="#">rooms & suites</a></div>
-              <div class="services"><a href="#">services</a></div>
-              <div class="book"><a href="#">book now</a></div>
+              <div class="rooms"><a href="#sectionA">suites</a></div>
+              <div class="services"><a href="#sectionc">services</a></div>
+              <div class="book"><a href="#sectionz">book now</a></div>
             </div>
-        </header> -->
+        </header>
+
+        <section class="talk">
+          <div class="essence">essence</div>
+          <div class="dash"></div>
+          <div class="title-talk">a warm welcome</div>
+
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ab nostrum quas facere fuga. Amet deserunt distinctio, exercitationem maiores cumque assumenda perferendis temporibus veniam, odio sint obcaecati ab necessitatibus ipsa doloremque! Doloribus <br> praesentium ipsa quibusdam fuga labore sapiente quae optio ipsum. Alias repellendus totam inventore, reiciendis ipsam reprehenderit eligendi eos?cumque assumenda perferendis temporibus veniam, odio sint obcaecati ab necessitatibus ipsa doloremque! Doloribus <br><br> praesentium ipsa quibusdam fuga labore sapiente quae optio ipsum. Alias repellendus totam inventore, reiciendis ipsam reprehenderit eligendi eos?</p>
+
+        </section>
+
+        <section class="room" id="sectionA">
+          <h2 class="roomtitle">rooms and suites</h2>
+          <div class="roomsu">We take pride in your comfort.</div>
+          <div class="operations">
+            <div class="buttons">
+              <button class="btn2 btn active" data-tab="1">mini room</button>
+              <button class="btn2 btn" data-tab="2">max suite</button>
+              <button class="btn3 btn" data-tab="3">max pro suite</button>
+            </div>
+          <div class="suites">
+            <div class="operations__content operations__content--1 content-active"><img src="images/erick-palacio-_B9J6abAHPA-unsplash.jpg" alt="rooms" class="pic"></div>
+            <div class="operations__content operations__content--2"><img src="images/khach-s-n-tinh-nhan-venice-1-hotel-FL2cq-GgnWQ-unsplash.jpg" class="pic"/></div>
+            <div class="operations__content operations__content--3"><img
+              src="images/ralph-ravi-kayden-FqqiAvJejto-unsplash.jpg" class="pic"
+            /></div>
+          </div>
+          </div>
+        </section>
+
+        <section class="now" id="sectionz">
+          <video src="videos/video.mp4"
+          poster="images/ej-k-eunirCQ_WXk-unsplash.jpg"
+           muted loop autoplay> <img src="images/ej-k-eunirCQ_WXk-unsplash.jpg" /> </video>
+           <div class="overlay"></div>
+
+           <div class="card">
+
+             <div class="front">
+               <h1>book now</h1>
+             </div>
+
+             <div class="back">
+               <div class="back-content">
+                 <form action="">
+                   <div><input type="text" placeholder="name"></div>
+                   <div> <input type="number" name="no" id="no" placeholder="no of people" min="0"></div>
+                   <div> <input type="text" placeholder="room"></div>
+                   <div><button>book</button></div> 
+                 </form>
+               </div>
+             </div>
+
+           </div>
+
+        </section>
+
+        <section class="servi" id="sectionc">
+          <div class="test">
+            <div class="w">
+              <div class="test-co">
+                <h1>swimming</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum saepe, libero temporibus nostrum in mollitia atque accusamus, voluptate iusto iste magni illo! Voluptatibus porro quo voluptatum reiciendis mollitia. Accusamus in nobis saepe autem consequuntur, fugiat fugit earum odit provident quas, repellat, impedit animi recusandae totam sunt aliquid! Molestiae, officiis maiores.</p>
+              </div>
+              
+            </div>
+            <div class="q"> <img src="images/carlos-colon-l6KgWD9tRQQ-unsplash.jpg" alt=""> </div>
+          </div>
+        </section>
+
+        <section class="servi">
+          <div class="test2">
+            <div class="w2">
+              <img src="images/chris-liverani-oCsaxvGCehM-unsplash.jpg" alt="">
+              
+            </div>
+            <div class="q2">  <div class="test-co">
+              <h1>fine dinning</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum saepe, libero temporibus nostrum in mollitia atque accusamus, voluptate iusto iste magni illo! Voluptatibus porro quo voluptatum reiciendis mollitia. Accusamus in nobis saepe autem consequuntur, fugiat fugit earum odit provident quas, repellat, impedit animi recusandae totam sunt aliquid! Molestiae, officiis maiores.</p>
+            </div>
+               </div>
+          </div>
+        </section>
+
+
+        <section class="servi">
+          <div class="test">
+            <div class="w">
+              <div class="test-co">
+                <h1>spa and gourmet</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum saepe, libero temporibus nostrum in mollitia atque accusamus, voluptate iusto iste magni illo! Voluptatibus porro quo voluptatum reiciendis mollitia. Accusamus in nobis saepe autem consequuntur, fugiat fugit earum odit provident quas, repellat, impedit animi recusandae totam sunt aliquid! Molestiae, officiis maiores.</p>
+              </div>
+              
+            </div>
+            <div class="q"> <img src="images/melissa-dupont-Yc7GKs9MABs-unsplash.jpg" alt=""> </div>
+          </div>
+          
+        </section>
+<footer>
+  <div class="buks">&copy; b.stella</div>
+</footer>
+    <script src="script.js"></script>
   </body>
 </html>

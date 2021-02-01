@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  transform: scale(0.95);
+  display: flex;
+}
+
+.left {
+  background-color: var(--color-dark--1);
+  width: 40%;
+  height: 100%;
+}
+.right {
+  background-color: rgb(228, 228, 245);
+  width: 60%;
+  height: 100%;
+}
+.leaflet-popup .leaflet-popup-content-wrapper {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(121, 33, 33);
+}
+.leaflet-popup .leaflet-popup-content {
+  width: 150px;
+  height: 20px;
+  font-size: 1rem;
+  overflow: hidden;
+}
+.leaflet-popup .leaflet-popup-tip {
+  background-color: rgb(121, 33, 33);
+}
+.tip .leaflet-popup-content-wrapper {
+  border-left: 5px solid #ffffff;
+  background-color: #2d3439;
+  /* border-top-left-radius: 0;
+  border-bottom-left-radius: 0; */
+}
+.tip .leaflet-popup-tip {
+  background-color: #2d3439;
+}
+.left h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 10px auto;
+  color: white;
+  opacity: 0.8;
+}
+.inner {
+  /* background-color: #23af4d; */
+  width: 100%;
+  height: 95%;
+  transform: scale(0.9);
+  overflow-y: auto;
+}
+.row-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 28%;
+  margin-top: 20px;
+}
+.flag {
+  width: 20%;
+  height: 100%;
+  background-color: var(--color-dark--2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 0px 0px 5px;
+}
+/* .e {
+  width: 90px;
+  height: 80px;
+  background: url("https://restcountries.eu/data/prt.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+} */
+.content {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  background-color: var(--color-dark--2);
+  color: rgb(236, 236, 236);
+  border-radius: 0px 5px 5px 0px;
+  border-left: 1px solid rgb(10, 10, 10);
+}
+.content-top {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.content-top h3 {
+  font-size: 2rem;
+}
+.content-down {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.end {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+.temp span {
+  color: rgb(245, 92, 92);
+}
+.time {
+  background-color: rgb(15, 15, 15);
+  padding: 0.9rem;
+}
