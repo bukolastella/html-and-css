@@ -224,8 +224,10 @@ class App {
       </div>
 
       <div class="content-down middle">
-        <div class="time">0 min ago</div>
-        <div class="temp"><span>🌡</span> ${w.temp}<sup>o</sup></div>
+        <div class="time">0 sec ago</div>
+        <div class="temp"><span>🌡</span> ${Math.trunc(
+          w.temp - 273.15
+        )}<sup>o</sup>C</div>
         <div class="humidity"><span>❄</span>${w.humidity}%</div>
         <div class="description"><span>☁</span> ${w.descrip}</div>
       </div>
