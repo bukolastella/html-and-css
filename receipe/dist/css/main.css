@@ -412,7 +412,20 @@ figure img {
   font-size: 1.1rem;
 }
 
-.info {
+.info-sect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 10%;
+}
+
+.info,
+.info2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,14 +435,27 @@ figure img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 10%;
+  height: 50%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.2rem;
   background-color: #f9f5f3;
   text-transform: uppercase;
+}
+
+.info {
+  margin-top: 1rem;
+}
+
+.info2 {
+  font-size: 0.8rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.info2 i {
+  color: #f38e82;
 }
 
 .minutes {
@@ -582,6 +608,11 @@ figure img {
   margin: auto;
 }
 
+.howto button a {
+  text-decoration: none;
+  color: white;
+}
+
 .modal {
   display: -ms-grid;
   display: grid;
@@ -640,6 +671,11 @@ figure img {
 
 .modal button i {
   margin-right: 0.5rem;
+}
+
+.modal button a {
+  text-decoration: none;
+  color: white;
 }
 
 .overlay {
