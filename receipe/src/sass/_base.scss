@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+$light-color: #f9f5f3;
+$dark-color: #615551;
+$pink-color: #f38e82;
+$gray: rgb(122, 120, 120);
+
+@mixin flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@mixin words {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@mixin flex2($dir) {
+  display: flex;
+  justify-content: $dir;
+  align-items: center;
+}

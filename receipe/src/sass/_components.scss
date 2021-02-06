@@ -1,0 +1,14 @@
+button {
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  background-color: $pink-color;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.1);
+}
