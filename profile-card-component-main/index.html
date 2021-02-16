@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body class="h-screen flex justify-center items-center bg-primary">
+    <img
+      src="images/bg-pattern-top.svg"
+      alt="top"
+      class="fixed right-1/2 bottom-1/3 z-1"
+    />
+    <img
+      src="images/bg-pattern-bottom.svg"
+      alt="bottom"
+      class="fixed left-1/2 top-1/2 z-1"
+    />
+    <div class="rounded-2xl w-4/5 z-10 bg-white relative sm:w-1/3">
+      <img
+        src="images/bg-pattern-card.svg"
+        alt=""
+        class="rounded-t-xl w-full"
+      />
+      <div class="absolute w-full top-12 sm:top-1/4">
+        <img
+          src="images/image-victor.jpg"
+          alt="pic"
+          class="mx-auto rounded-full border-4 border-white"
+        />
+      </div>
+
+      <h1 class="mt-20 text-center font-bold text-xl">
+        Victor Crest <span class="text-gray-400 ml-2">26</span>
+      </h1>
+      <div class="my-2 text-center text-gray-400 mb-8">London</div>
+      <hr />
+      <div
+        class="lower flex justify-evenly sm:justify-between items-center mx-5 sm:mx-20 my-10 flex-wrap"
+      >
+        <div class="a">
+          <h1 class="font-bold text-lg sm:text-2xl">80K</h1>
+          <span class="capitalize text-gray-500">followers</span>
+        </div>
+        <div class="a">
+          <h1 class="font-bold text-lg sm:text-2xl">803K</h1>
+          <span class="capitalize text-gray-500">Likes</span>
+        </div>
+        <div class="a">
+          <h1 class="font-bold text-lg sm:text-2xl">1.4K</h1>
+          <span class="capitalize text-gray-500">Photos</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

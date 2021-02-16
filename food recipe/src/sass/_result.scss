@@ -1,0 +1,90 @@
+.result {
+  &_active {
+    background-color: $light-color;
+  }
+  a {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 30px 30px;
+    grid-template-areas:
+      "img h1 h1"
+      "img h5 ico";
+    column-gap: 10px;
+    align-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.7rem;
+    margin-top: 2rem;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      background-color: $light-color;
+      transform: translateY(-5px);
+    }
+    img {
+      grid-area: img;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    h1 {
+      grid-area: h1;
+      font-size: 1rem;
+      @include words;
+      font-weight: normal;
+      margin-top: 0.7rem;
+      text-decoration: none;
+      // margin: auto;
+      // background-color: $dark-color;
+      color: $pink-color;
+    }
+    h5 {
+      grid-area: h5;
+      font-size: 0.8rem;
+      width: 100%;
+      color: $gray;
+      text-decoration: none;
+      font-weight: lighter;
+      // background-color: $dark-color;
+      // margin: auto;
+      @include words;
+    }
+    i {
+      grid-area: ico;
+      text-align: end;
+      color: $pink-color;
+    }
+    i.hidden {
+      display: none;
+    }
+  }
+}
+.page {
+  @include flex;
+  justify-content: space-between;
+  color: $pink-color;
+  width: 90%;
+  height: 5%;
+  margin: 30px auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  position: relative;
+  button {
+    width: 30%;
+    background-color: $light-color;
+    color: $pink-color;
+    padding: 0.5rem;
+    @include flex;
+  }
+  .l {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .r {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

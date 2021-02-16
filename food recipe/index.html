@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="src/js/controller.js"></script>
+    <title>recipe</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="src/img/logo.png" alt="" />
+        <form class="search">
+          <input type="text" placeholder="search" class="search_field" />
+          <button>search</button>
+        </form>
+        <div class="add">
+          <i class="far fa-edit fa-2x"></i>
+          <span>add recipe</span>
+        </div>
+        <div class="bookmark">
+          <i class="far fa-bookmark fa-2x"></i>
+          <span>bookmarks</span>
+        </div>
+        <!--  -->
+        <div class="a">
+          <p>
+            <i class="fas fa-exclamation-triangle"></i>
+            <span>No bookmarks yet. Find a nice recipe and bookmark it</span>
+          </p>
+        </div>
+      </header>
+      <section class="left">
+        <div class="left_result">
+          <div></div>
+          <!-- <div class="result">
+            <img src="src/img/favicon.png" alt="" />
+            <h1>jaso idsjkmskmlhjhjdsjjksjkdjksd</h1>
+            <h5>colokig skilld sdhuj</h5>
+            <i class="far fa-user-circle hid"></i>
+          </div>
+        </div> -->
+        <div class="page">
+          <!-- <button class="l">
+            <i class="far fa-hand-point-left"></i> page 1
+          </button>
+          <button class="r">
+            page 2 <i class="far fa-hand-point-right"></i>
+          </button> -->
+        </div>
+      </section>
+      <section class="right">
+        <!-- <div class="spinner">
+          <i class="fas fa-spinner"></i>
+        </div> -->
+        <div class="message">
+          <i class="far fa-smile fa-2x"></i>
+          <span
+            >Start by searching for a recipe or an ingredient. Have fun!</span
+          >
+        </div>
+        <!-- <figure>
+          <img
+            src="src/img/shourav-sheikh-a66sGfOnnqQ-unsplash.jpg"
+            alt="pizza image"
+          />
+          <h1>
+            <span>Pasta with tomato cream sauce</span>
+          </h1>
+          
+        </figure> -->
+        <!-- <div class="info-sect">
+          <div class="info">
+            <div class="minutes">
+              <i class="far fa-clock"></i>
+              <span> <b>30</b> minutes</span>
+            </div>
+            <div class="servings">
+              <i class="fas fa-user-friends"></i>
+              <span> <b>4</b> servings</span>
+              <i class="fas fa-minus-circle"></i>
+              <i class="fas fa-plus-circle"></i>
+            </div>
+            <div class="mark">
+              <i class="far fa-bookmark"></i>
+            </div>
+          </div>
+          <div class="info2">
+            <div class="cal">
+              <i class="fas fa-tags"></i> <span>calcolries: <b>4000</b> </span>
+            </div>
+            <div class="diet">
+              <i class="fas fa-tags"></i>
+              <span>dietLabels: <b>LOW_CARB</b> </span>
+            </div>
+            <div class="health">
+              <i class="fas fa-tags"></i>
+              <span>healthLabels: <b>DAIRY_FREE</b> </span>
+            </div>
+          </div>
+        </div>
+        <div class="ig">
+          <h1>RECIPE INGREDIENTS</h1>
+          <div>
+            <i class="fas fa-check"></i>
+            <p><span>1</span> store bought pizza crust or refrigerated crust</p>
+          </div>
+          <div>
+            <i class="fas fa-check"></i>
+            <p><span>1</span> store bought pizza crust or refrigerated crust</p>
+          </div>
+          <div>
+            <i class="fas fa-check"></i>
+            <p><span>1</span> store bought pizza crust or refrigerated crust</p>
+          </div>
+          <div>
+            <i class="fas fa-check"></i>
+            <p><span>1</span> store bought pizza crust or refrigerated crust</p>
+          </div>
+          <div>
+            <i class="fas fa-check"></i>
+            <p><span>1</span> store bought pizza crust or refrigerated crust</p>
+          </div>
+          <div>
+            <i class="fas fa-check"></i>
+            <p><span>1</span> store bought pizza crust or refrigerated crust</p>
+          </div>
+        </div>
+        <div class="howto">
+          <h1>HOW TO COOK IT</h1>
+          <p>
+            This recipe was carefully designed and tested by My Baking
+            Addiction. Please check out directions at their website.
+          </p>
+          <button><a href="#"> Direction -></a></button>
+        </div> -->
+      </section>
+    </main>
+    <section class="modal hidden">
+      <h1>RECIPE DATA</h1>
+      <h1>INGREDIENTS</h1>
+      <form class="form upload">
+        <span>Title</span>
+        <input type="text" required name="title" value="TEST23" />
+        <span>URL</span>
+        <input type="text" required name="sourceUrl" value="TEST23" />
+        <span>Image URL</span>
+        <input type="text" required name="image" value="TEST23" />
+        <span>Publisher</span>
+        <input type="text" required name="publisher" value="TEST23" />
+        <span>Prep time</span>
+        <input type="text" required name="cookingTime" value="23" />
+        <span>Servings</span>
+        <input type="text" required name="servings" value="23" />
+        <span>Ingredient 1</span>
+        <input
+          type="text"
+          required
+          name="ingredient-1"
+          value="0.5,kg,Rice"
+          placeholder="Format: 'Quantity,Unit,Description'"
+        />
+        <span>Ingredient 2</span>
+        <input
+          type="text"
+          name="ingredient-2"
+          value="1,,Avocado"
+          placeholder="Format: 'Quantity,Unit,Description'"
+        />
+        <span>Ingredient 3</span>
+        <input
+          type="text"
+          name="ingredient-3"
+          value=",,salt"
+          placeholder="Format: 'Quantity,Unit,Description'"
+        />
+        <span>Ingredient 4</span>
+        <input
+          type="text"
+          name="ingredient-4"
+          placeholder="Format: 'Quantity,Unit,Description'"
+        />
+        <span>Ingredient 5</span>
+        <input
+          type="text"
+          name="ingredient-5"
+          placeholder="Format: 'Quantity,Unit,Description'"
+        />
+        <span>Ingredient 6</span>
+        <input
+          type="text"
+          name="ingredient-6"
+          placeholder="Format: 'Quantity,Unit,Description'"
+        />
+        <button>
+          <i class="fas fa-cloud-upload-alt"></i> <a>Direction</a>
+        </button>
+      </form>
+      <span class="x">x</span>
+    </section>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
